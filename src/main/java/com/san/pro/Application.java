@@ -8,13 +8,13 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-public class JobschedulerBatchApplication {
+public class Application {
 	
-	private static final Logger log = LoggerFactory.getLogger(JobschedulerBatchApplication.class);
+	private static final Logger log = LoggerFactory.getLogger(Application.class);
 
 	public static void main(String[] args) {
 		try {
-			SpringApplication.run(JobschedulerBatchApplication.class, args);
+			SpringApplication.run(Application.class, args);
 			log.info("--- Application started successfully ---");
 		} catch (Exception e) {
 			log.error("something went wrong !!!");
